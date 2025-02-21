@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Blocked</title>
+  <link rel="icon" type="image/x-icon" href="https://tinyurl.com/yt7f6mkc">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="/" aria-label="Abenson Logo" class="logo">
+        <img src="https://tinyurl.com/26zwj34r" alt="Logo" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="top">
+        <div>
+          <img src="https://tinyurl.com/3mtx4j5u" alt="Error Page" width="504px" height="414px" />
+        </div>
+
+        <div class="hero-text">
+          <h1>
+            Oops! </h1>
+          <p>If you’re using VPN, please disable it to get the full abenson.com experience</p>
+        </div>
+      </div>
+
+      <div class="btm">
+        <p>If you think this is an error, contact us through:</p>
+
+        <div class="htl-cont">
+          <a href="tel:+639209328945">
+            <img src="https://tinyurl.com/3x7msxb2" alt="icon" />
+            <div>
+              <p>Mobile</p>
+              <p>+63 920 932 8945</p>
+            </div>
+          </a>
+
+          <a href="viber://pa?chatURI=abensonph">
+            <img src="https://tinyurl.com/yv4d64ae" alt="icon" />
+            <div>
+              <p>Viber</p>
+              <p>+63 920 932 8523</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/639178799483">
+            <img src="https://tinyurl.com/3fs3ju4j" alt="icon" />
+            <div>
+              <p>Whatsapp</p>
+              <p>+63 917 879 9483</p>
+            </div>
+          </a>
+          <a href="tel:+0289210888">
+            <img src="https://tinyurl.com/3fs3ju4j" alt="icon" />
+            <div>
+              <p>Telephone</p>
+              <p>(02) 8921-0888</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="wave"></div>
+    </section>
+  </main>
+</body>
+
+</html>
+
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    align-items: center;
+    font-family: "Poppins", serif;
+    height: 100vh;
+    background-color: #c3deff;
+    color: #4c525c;
+  }
+
+  body,
+  main,
+  .top,
+  .logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  main,
+  header>div,
+  .htl-cont>a {
+    display: flex;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    color: #006de2;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 4vw, 3rem);
+    line-height: clamp(1.8rem, 4vw, 2.2rem);
+  }
+
+  header {
+    width: 100%;
+    background-color: #ecf5ff;
+  }
+
+  header>div {
+    height: 70px;
+    background-color: #1e22aa;
+    padding: 0 30px;
+  }
+
+  .top {
+    justify-content: center;
+    text-align: center;
+    gap: clamp(3rem, 7vw, 8rem);
+    z-index: 2;
+  }
+
+  header>div,
+  #hero,
+  .wave {
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  header,
+  main {
+    max-width: 1400px;
+  }
+
+  .logo>img {
+    max-width: 10rem;
+    width: clamp(8rem, 15vw, 10rem);
+    height: auto;
+  }
+
+  #hero {
+    width: 100%;
+    position: relative;
+    background-color: #ecf5ff;
+    padding: clamp(3rem, 5vw, 5rem) clamp(1rem, 5vw, 5rem);
+    max-width: 1400px;
+  }
+
+  .wave {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 85%;
+    width: 100%;
+    z-index: 1;
+    background-image: url("https://tinyurl.com/4h5pm4ss");
+    background-size: cover;
+  }
+
+  .hero-text {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 36rem;
+    gap: 1rem;
+  }
+
+  h1+p {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+    margin: 0 auto;
+    max-width: 30rem;
+  }
+
+  .top img {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .btm,
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btm {
+    align-items: center;
+    margin-top: clamp(1rem, 4vw, 3rem);
+    position: relative;
+    z-index: 2;
+  }
+
+  .btm>p {
+    text-align: center;
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+  }
+
+  .htl-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 clamp(0.3rem, 5vw, 5rem);
+    max-width: 31rem;
+    margin-top: clamp(.5rem, 3vw, 1rem);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .htl-cont>a {
+    height: 5.125rem;
+    justify-self: center;
+    width: 150px;
+    gap: 0.6rem;
+  }
+
+
+  .htl-cont p {
+    color: #185BAA;
+    text-wrap: nowrap;
+  }
+
+  .htl-cont>a p:nth-child(1) {
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+
+  .htl-cont>a p:nth-child(2) {
+    font-size: 0.6875rem;
+  }
+
+
+  .htl-cont>a:hover>img {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+  }
+
+
+  @media only screen and (width > 768px) {
+    .wave {
+      height: 60%;
+    }
+
+    .top {
+      flex-direction: row-reverse;
+      text-align: unset;
+      justify-content: space-between;
+      max-width: 70rem;
+    }
+
+    .btm {
+      display: flex;
+      margin-top: 4rem;
+    }
+
+    .htl-cont {
+      display: flex;
+      max-width: unset;
+      margin: unset;
+      flex-wrap: wrap;
+
+
+    }
+
+    .htl-cont>a {
+      width: unset;
+    }
+
+    h1+p,
+    .hero-text {
+      margin: unset;
+    }
+
+    .top img {
+      width: clamp(20rem, 35vw, 50rem);
+      max-width: 389.47px;
+      margin-top: -2rem;
+    }
+  }
+
+  @media only screen and (width > 968px) {
+
+    .btm>p,
+    .btm,
+    .htl-cont {
+      text-align: unset;
+      justify-content: unset;
+      align-items: start;
+    }
+
+    .htl-cont {
+      gap: 0 clamp(0.3rem, 5vw, 2rem);
+    }
+
+    .btm {
+      margin-top: 2rem;
+    }
+
+
+  }
+
+  @media screen and (width > 1400px) {
+    body {
+      background-color: unset;
+    }
+
+    #hero {
+      margin-top: 2rem;
+      border-radius: 1.25rem;
+    }
+  }
+</style>
