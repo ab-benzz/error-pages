@@ -1,0 +1,263 @@
+<section id="hero">
+    <div class="top">
+        <div>
+            <img src="https://d1lawtzzwljwoe.cloudfront.net/wysiwyg/pages/error-404/404-illustration.png"
+                alt="Error Page" width="504px" height="414px" />
+        </div>
+
+        <div class="hero-txt">
+            <h1>
+                This page looks empty... but your home doesn't have to be! </h1>
+            <p>Let's build your dream home. Check our top products below.</p>
+        </div>
+    </div>
+
+    <div class="btm">
+        <p>If you think this is an error, contact us through:</p>
+
+        <div class="htl-cont">
+            <a href="tel:+639209328945">
+                <img src="https://tinyurl.com/3x7msxb2" alt="icon" />
+                <div>
+                    <p>Mobile</p>
+                    <p>+63 920 932 8945</p>
+                </div>
+            </a>
+
+            <a href="viber://pa?chatURI=abensonph">
+                <img src="https://tinyurl.com/yv4d64ae" alt="icon" />
+                <div>
+                    <p>Viber</p>
+                    <p>+63 920 932 8523</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/639178799483">
+                <img src="https://tinyurl.com/3fs3ju4j" alt="icon" />
+                <div>
+                    <p>Whatsapp</p>
+                    <p>+63 917 879 9483</p>
+                </div>
+            </a>
+            <a href="tel:+0289210888">
+                <img src="https://tinyurl.com/3fs3ju4j" alt="icon" />
+                <div>
+                    <p>Telephone</p>
+                    <p>(02) 8921-0888</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="wave"></div>
+</section>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .top,
+    .logo {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    header>div,
+    .htl-cont>a {
+        display: flex;
+        align-items: center;
+    }
+
+
+    h1 {
+        color: #006de2;
+        font-weight: 600;
+        font-size: clamp(19.2px, 2.8vw, 24px);
+        line-height: clamp(28.8px, 4vw, 35.2px);
+    }
+
+    .top {
+        justify-content: center;
+        text-align: center;
+        gap: clamp(48px, 7vw, 128px);
+        z-index: 2;
+    }
+
+    #hero,
+    .wave {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+
+    #hero {
+        width: 100%;
+        position: relative;
+        background-color: #ecf5ff;
+        padding: clamp(48px, 5vw, 80px) clamp(16px, 5vw, 80px);
+        max-width: 1400px;
+    }
+
+    .wave {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 85%;
+        width: 100%;
+        z-index: 1;
+        background-image: url("https://tinyurl.com/4h5pm4ss");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-txt {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 576px;
+        gap: 16px;
+    }
+
+    .hero-txt p {
+        font-size: clamp(13.6px, 2.5vw, 14.4px);
+    }
+
+    .top img {
+        width: 100%;
+        max-width: 288px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .btm,
+    .hero-txt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btm {
+        align-items: center;
+        margin-top: clamp(16px, 4vw, 48px);
+        position: relative;
+        z-index: 2;
+    }
+
+    .btm>p {
+        text-align: center;
+        font-size: clamp(13.6px, 2.5vw, 14.4px);
+    }
+
+    .htl-cont {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 clamp(4.8px, 5vw, 80px);
+        max-width: 31rem;
+        margin-top: clamp(8px, 3vw, 16px);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .htl-cont>a {
+        height: 82px;
+        justify-self: center;
+        width: 150px;
+        gap: 9.6px;
+    }
+
+    .htl-cont p {
+        color: #185BAA;
+        text-wrap: nowrap;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .htl-cont>a p:nth-child(2) {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .htl-cont>a:hover>img {
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+    }
+
+    @media only screen and (width > 768px) {
+        .wave {
+            height: 60%;
+        }
+
+        .top {
+            flex-direction: row-reverse;
+            text-align: unset;
+            justify-content: space-between;
+            max-width: 1120px;
+        }
+
+        .btm {
+            display: flex;
+            margin-top: 64px;
+        }
+
+        .htl-cont {
+            display: flex;
+            max-width: unset;
+            margin: unset;
+            flex-wrap: wrap;
+
+
+        }
+
+        .htl-cont>a {
+            width: unset;
+        }
+
+        .hero-txt {
+            margin: unset;
+        }
+
+        .top img {
+            width: clamp(320px, 35vw, 800px);
+            max-width: 389.47px;
+            margin-top: -32px;
+        }
+    }
+
+    @media only screen and (width > 968px) {
+
+        .btm>p,
+        .btm,
+        .htl-cont {
+            text-align: unset;
+            justify-content: unset;
+            align-items: start;
+        }
+
+        .htl-cont {
+            gap: 0 clamp(4.8px, 5vw, 32px);
+        }
+
+        .btm {
+            margin-top: 32px;
+        }
+    }
+
+    @media screen and (width > 1400px) {
+        body {
+            background-color: unset;
+        }
+
+        #hero {
+            margin-top: 32px;
+            border-radius: 20px;
+        }
+    }
+</style>
