@@ -16,40 +16,100 @@
 </head>
 
 <body>
-    <section>
-        <h1> Error Pages </h1>
-        <p>Navigate to every link to view each pages</p>
-        <ul>
-            <li><a href="minified/Error-Page.html">Error 403</a></li>
-            <li><a href="minified/Bot-blocked.html">Bot Blocked</a></li>
-            <li><a href="minified/High-Traffic-Maintenance.html">High Traffic Maintenance</a></li>
-            <li><a href="minified/Magento-Error-Page-blocked.html">Magento Error Page Blocked</a></li>
-            <li><a href="minified/Maintenance.html">Maintenance</a></li>
-            <li><a href="minified/Search-Blocked.html">Search Blocked</a></li>
-        </ul>
-    </section>
+    <header>
+        <div>
+            <a href="/" class="logo">
+                <img src="https://tinyurl.com/26zwj34r" />
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1> Error Pages </h1>
+            <p>Navigate to every link to view each pages</p>
+            <ul>
+                <li><a href="minified/Error-Page.html">Error 403</a></li>
+                <li><a href="minified/Bot-blocked.html">Bot Blocked</a></li>
+                <li><a href="minified/High-Traffic-Maintenance.html">High Traffic Maintenance</a></li>
+                <li><a href="minified/Magento-Error-Page-blocked.html">Magento Error Page Blocked</a></li>
+                <li><a href="minified/Maintenance.html">Maintenance</a></li>
+                <li><a href="minified/Search-Blocked.html">Search Blocked</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
 
 <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+    }
+
     body {
-        background-color: #ECF5FF;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        position: relative;
         align-items: center;
-        height: 100vh;
         font-family: "Poppins", serif;
+        height: 100vh;
+        /* background-color: #c3deff; */
         color: #4c525c;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #ecf5ff;
+        max-width: 1400px;
+    }
+
+    header>div {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        background-color: #1e22aa;
+        padding: 0 30px;
+        border-bottom-left-radius: 1.25rem;
+        border-bottom-right-radius: 1.25rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+        max-width: 1400px;
     }
 
     section {
         background-color: #C3DEFF;
-        width: max-content;
+        /* width: max-content; */
         padding: 5rem;
         border-radius: 2rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+    .logo>img {
+        max-width: 10rem;
+        width: clamp(8rem, 15vw, 10rem);
+        height: auto;
     }
 
     div {
